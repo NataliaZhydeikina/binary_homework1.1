@@ -1,0 +1,14 @@
+#header {
+  position: fixed;
+  background: none;
+  z-index:5;
+}
+
+.headerContent {
+  
+}
+
+#mainContent {
+  overflow-x: scroll;
+  height: calc(100vh - 30px);
+}
