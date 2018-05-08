@@ -108,3 +108,97 @@
 }
 
 
+
+
+
+@media (min-width: 400px) {
+  .container {
+    width: 95%;
+  }
+}
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+    .container {
+    width: 95%;
+  }
+}
+
+html {
+  overflow: hidden;
+}
+body {
+  background:url('http://thepatternlibrary.com/img/ae.jpg');
+  font-family: 'Open Sans', sans-serif;
+  overflow:hidden;
+}
+.container {
+  padding-bottom:0;
+  height: calc(100vh - 16px);
+  overflow: hidden;
+}
+.hidden{
+     opacity:0;
+}
+.visible{
+     opacity:1;
+}
+.sectionTitle {
+  font-size:24px;
+  font-weight:bold;
+  line-height:24px;
+  color:#3D3D3D;
+  padding-bottom:5px;
+  border-bottom:1.5px dashed #3D3D3D;
+  margin-bottom:5px;
+}
+.svgIcon {
+  padding-right:5px;
+}
+.no-m-l {
+  margin-left:0;
+}
+#education, #experience {
+  margin-bottom:15px;
+}
+#education .columns, #experience .columns {
+  margin-top:15px;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+a.pulse::hover img {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
